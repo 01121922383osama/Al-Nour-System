@@ -6,7 +6,6 @@ import 'package:al_noor/features/auth/presentation/widgets/build_language.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
-  // add test space
   const LoginPage({super.key});
 
   @override

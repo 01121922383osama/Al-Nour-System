@@ -1,5 +1,6 @@
 class RoutName {
   static const String splash = '/splash';
+  static const String app = '/app';
   static const String onBoarding = '/onboarding';
   static const String login = '/login';
   static const String register = '/register';
@@ -14,4 +15,5 @@ class RoutName {
   static const String settings = '/settings';
   static const String contactUs = '/contactUs';
   static const String aboutUs = '/aboutUs';
+  static const String addCategory = '/add_category';
 }

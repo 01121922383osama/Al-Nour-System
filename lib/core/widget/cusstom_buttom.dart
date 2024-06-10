@@ -1,5 +1,7 @@
-import 'package:al_noor/core/constants/app_colors.dart';
+import 'package:al_noor/core/widget/custom_text.dart';
 import 'package:flutter/material.dart';
+
+import '../constants/app_colors.dart';
 
 class CustomButtom extends StatelessWidget {
   final String buttonText;
@@ -24,13 +26,10 @@ class CustomButtom extends StatelessWidget {
         padding: const EdgeInsets.all(16),
       ),
       onPressed: onPressed,
-      child: Text(
-        buttonText,
-        style: const TextStyle(
-          fontSize: 16,
-          color: ColorsManager.white,
-          fontWeight: FontWeight.bold,
-        ),
+      child: CustomTextWidget(
+        text: buttonText,
+        fontSize: 16,
+        color: ColorsManager.white,
       ),
     );
   }

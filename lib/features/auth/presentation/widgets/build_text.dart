@@ -1,4 +1,4 @@
-import 'package:al_noor/core/constants/app_colors.dart';
+import '../../../../core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 Widget buildtext() {
@@ -6,14 +6,10 @@ Widget buildtext() {
     TextSpan(
       children: [
         TextSpan(
-          text: 'If you forget your password!\n',
+          text: 'If you can not log in!\n',
         ),
         TextSpan(
           text: 'Contact with us\n',
-          style: TextStyle(
-            color: ColorsManager.mainBlue,
-            decoration: TextDecoration.underline,
-          ),
         ),
         TextSpan(
           text: '01147566910',

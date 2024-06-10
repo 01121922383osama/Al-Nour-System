@@ -1,3 +1,4 @@
+import 'package:al_noor/core/widget/custom_text.dart';
 import 'package:flutter/material.dart';
 
 class BuildLanguageIcon extends StatelessWidget {
@@ -8,7 +9,10 @@ class BuildLanguageIcon extends StatelessWidget {
     return Row(
       children: [
         const Chip(
-          label: Text('English'),
+          label: CustomTextWidget(
+            text: 'English',
+            fontSize: 16,
+          ),
         ),
         PopupMenuButton(
           iconSize: 35,
@@ -16,11 +20,17 @@ class BuildLanguageIcon extends StatelessWidget {
             return const [
               PopupMenuItem(
                 value: 'English',
-                child: Text('English'),
+                child: CustomTextWidget(
+                  text: 'English',
+                  fontSize: 16,
+                ),
               ),
               PopupMenuItem(
                 value: 'Arabic',
-                child: Text('Arabic'),
+                child: CustomTextWidget(
+                  text: 'Arabic',
+                  fontSize: 16,
+                ),
               ),
             ];
           },

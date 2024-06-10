@@ -1,8 +1,8 @@
-import 'package:al_noor/core/constants/app_colors.dart';
-import 'package:al_noor/core/extension/screen_utils.dart';
-import 'package:al_noor/core/widget/resposive_view.dart';
-import 'package:al_noor/features/auth/presentation/widgets/build_input_widget.dart';
-import 'package:al_noor/features/auth/presentation/widgets/build_language.dart';
+import '../../../../core/constants/app_colors.dart';
+import '../../../../core/extension/screen_utils.dart';
+import '../../../../core/widget/resposive_view.dart';
+import '../widgets/build_input_widget.dart';
+import '../widgets/build_language.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {

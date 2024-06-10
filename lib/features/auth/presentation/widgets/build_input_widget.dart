@@ -1,11 +1,15 @@
-import 'package:al_noor/core/constants/app_colors.dart';
-import 'package:al_noor/core/constants/app_images.dart';
-import 'package:al_noor/core/widget/cusstom_buttom.dart';
-import 'package:al_noor/core/widget/custom_sizedbox.dart';
-import 'package:al_noor/core/widget/custom_text_field.dart';
-import 'package:al_noor/features/auth/presentation/widgets/build_security.dart';
-import 'package:al_noor/features/auth/presentation/widgets/build_text.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../config/router/rout_name.dart';
+import '../../../../core/constants/app_colors.dart';
+import '../../../../core/constants/app_images.dart';
+import '../../../../core/extension/navigations.dart';
+import '../../../../core/widget/cusstom_buttom.dart';
+import '../../../../core/widget/custom_sizedbox.dart';
+import '../../../../core/widget/custom_text_field.dart';
+import 'build_security.dart';
+import 'build_text.dart';
+import 'show_dialog.dart';
 
 class BuildInPutWidget extends StatelessWidget {
   final double radius;
@@ -28,19 +32,28 @@ class BuildInPutWidget extends StatelessWidget {
               ),
             ),
             buildSomeSpace(),
-            const CustomTextFieldWidget(
-              hintText: 'Email',
+            const CostomTextFieldWidget(
+              labelText: 'Email',
               prefixIcon: Icon(Icons.email, color: ColorsManager.blue),
             ),
             buildSomeSpace(),
-            const CustomTextFieldWidget(
-              hintText: 'Password',
+            const CostomTextFieldWidget(
+              labelText: 'Password',
               prefixIcon: Icon(Icons.lock, color: ColorsManager.blue),
             ),
             buildSomeSpace(),
             CustomButtom(
               buttonText: 'Login',
-              onPressed: () {},
+              onPressed: () {
+                buildShowDialog(
+                  context,
+                  onCompleted: (value) {
+                    if (value == '123456') {
+                      context.pushNamedAndRemoveUntil(RoutName.app);
+                    }
+                  },
+                );
+              },
             ),
             buildSomeSpace(),
             buildtext(),

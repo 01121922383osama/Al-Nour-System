@@ -1,6 +1,6 @@
-import 'package:al_noor/config/router/rout_name.dart';
-import 'package:al_noor/core/constants/app_images.dart';
-import 'package:al_noor/core/extension/navigations.dart';
+import '../../config/router/rout_name.dart';
+import '../../core/constants/app_images.dart';
+import '../../core/extension/navigations.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatefulWidget {
